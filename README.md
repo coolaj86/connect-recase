@@ -21,9 +21,13 @@ npm install --save connect-recase
 ```
 
 ```javascript
-var recase = require('connect-recase')()
-app.use('/api', recase);
+var recase = require('connect-recase')
+app.use('/api', recase());
+```
 
+### Example
+
+```javascript
 // some resource
 app.use('/api/some-resource', function (req, res) {
   console.log(req.body);
@@ -54,15 +58,19 @@ curl https://local.daplie.com/api/some-resource \
 ## Getting Fancy
 
 ```javascript
-var recase = require('connect-recase')({
+var recase = require('connect-recase');
+app.use(recase({
   prefixes: ['/api']
 , cancelParam: 'camel'
 , exceptions: { Poorly_NamedProp: 'better_named_property' }
-});
-app.use(recase);
+}));
 ```
 
 ## API
+
+* prefixes
+* cancelParam
+* exceptions
 
 ### `prefixes`
 
