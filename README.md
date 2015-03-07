@@ -1,19 +1,18 @@
 # connect-recase
 
-Convert your API back and forth from snake_case and camelCase.
+Convert your API back and forth between snake_case and camelCase.
 
-## Reasoning
+`{ "popularCatchphrase": "it's morphin' time!" }` => `{ "popular_catchphrase": "it's morphin' time!" }`
 
-It's no secret. Machines can parse snake_case easier than camelCase.
-And guess what: so can humans!
+If your API is designed to be consumed by Ruby, Python, Go, or other modern web frameworks,
+it will be easier for consumers if you serve them `snake_case_properties`, y'know.
 
-It's easier to read. It's easier to regex. It's empirically better.
+It's no secret that machines can parse snake_case easier than camelCase.
+And guess what: so can humans! It's easier to read. It's easier to regex. It's empirically better.
 
 But we live in the JavaScript world and the convention is so strongly camelCase that there's no use
 in fighting it.
 
-If your API is designed to be consumed by Ruby, Python, Go, or other modern web frameworks,
-it will be easier for consumers if you serve them snake_case_properties, y'know.
 
 ## Normal Use
 
