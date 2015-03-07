@@ -1,0 +1,32 @@
+{
+  "name": "connect-recase",
+  "version": "1.0.0",
+  "description": "\"convert your external api to snake_case (ruby style) for easier machine consumption, and back to camelCase for conventional JavaScript\"",
+  "main": "connect-recase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coolaj86/connect-recase.git"
+  },
+  "keywords": [
+    "recase",
+    "snake_case",
+    "snake",
+    "case",
+    "camelCase",
+    "camel",
+    "api",
+    "ruby",
+    "rails",
+    "api",
+    "json"
+  ],
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.com/)",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/coolaj86/connect-recase/issues"
+  },
+  "homepage": "https://github.com/coolaj86/connect-recase"
+}
