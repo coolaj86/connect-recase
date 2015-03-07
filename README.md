@@ -24,6 +24,32 @@ npm install --save connect-recase
 ```javascript
 var recase = require('connect-recase')()
 app.use('/api', recase);
+
+// some resource
+app.use('/api/some-resource', function (req, res) {
+  console.log(req.body);
+  res.send({ popularCatchphrase: "it's morphin' time!" });
+});
+```
+
+If you test getting the resource, it will come in snake_case:
+
+```bash
+curl https://local.daplie.com/api/some-resource
+
+{ "popular_catchphrase": "it's morphin' time!" }
+```
+
+If you test posting some data, it will come in snake_case:
+
+```bash
+curl https://local.daplie.com/api/some-resource \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{ "user_data": { "display_name": "Johnny Lingo", "profile_url": "https://aj.daplie.com" } }'
+  
+# you'll see this in your console.log
+{ "userData": { "displayName": "Johnny Lingo", "profileUrl": "https://aj.daplie.com" } }
 ```
 
 ## Getting Fancy
