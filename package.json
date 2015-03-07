@@ -1,7 +1,7 @@
 {
   "name": "connect-recase",
-  "version": "1.0.0",
-  "description": "\"convert your external api to snake_case (ruby style) for easier machine consumption, and back to camelCase for conventional JavaScript\"",
+  "version": "1.0.1",
+  "description": "convert your external api to snake_case (ruby style) for easier machine consumption, and back to camelCase for conventional JavaScript",
   "main": "connect-recase.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
